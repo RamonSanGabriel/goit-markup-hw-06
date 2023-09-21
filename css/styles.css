@@ -486,10 +486,12 @@ p {
 .filter-list a:hover::after {
   transform: scaleX(2);
 }
+
 .filter-list .active {
   background: var(--ocean, #404bbf);
   color: var(--white, #fff);
 }
+
 .section-card {
   padding-bottom: 120px;
 }
@@ -667,17 +669,17 @@ p {
   left: 0px;
   pointer-events: auto;
   opacity: 1;
-  transition-property: visibility, opacity, transform, width;
+  transition-property: visibility, opacity, transform;
   transition-duration: 250ms;
-  transform: rotate(360deg);
-
+  transform: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal.is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: auto;
-  transform: translateY(30px);
+  pointer-events: none;
+  transform: translateY(-20px);
 }
 
 .modal-content {
@@ -685,11 +687,13 @@ p {
   width: 408px;
   height: 584px;
   background-color: white;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
 }
 
-.modal-close svg {
+.modal-close {
   justify-content: center;
   stroke: rgba(46, 47, 66, 1);
   stroke-width: 1px;
@@ -704,6 +708,12 @@ p {
   background: rgb(231, 233, 252);
 }
 
+.modal-close svg {
+  width: 24px;
+  height: 24px;
+}
+
 .modal-close:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
