@@ -669,7 +669,7 @@ p {
   left: 0px;
   pointer-events: auto;
   opacity: 1;
-  transition-property: visibility, opacity, transform;
+  transition-property: visibility, opacity;
   transition-duration: 250ms;
   transform: none;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,6 +679,9 @@ p {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal.is-hidden .modal-content {
   transform: translateY(-20px);
 }
 
@@ -691,6 +694,8 @@ p {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
+  transform: none;
+  transition: transform 250ms;
 }
 
 .modal-close {
