@@ -329,7 +329,6 @@ p {
   text-align: center;
   background-color: var(--cloud);
   padding: 120px 0px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -562,7 +561,6 @@ p {
   display: flex;
   background-color: var(--navyblue);
   padding: 101.5px 15px 100px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
