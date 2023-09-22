@@ -322,43 +322,47 @@
       </ul>
     </div>
   </footer>
-
   <div class="modal is-hidden" data-modal>
     <div class="modal-content">
-      <h2 class="user-contact-heading">Leave your contacts and we will call you back</h2>
+      <h2>Leave your contacts and we will call you back</h2>
       <form class="user-contact">
-
-        <label for="first-name">
-          Name:
+        <label class="user-contact-field">
+          <span class="user-contact-label">Name:</span>
+          <input type="text" name="first_name">
+          <!-- <svg class="user-contact-icon" id="first-name">
+            <use href="./images/icons.svg#icon-user"></use>
+          </svg> -->
         </label>
-        <input type="text" placeholder="full name" name="first_name" id="first-name">
 
-        <label for="phone">
-          Telephone:
+        <label class="user-contact-field">
+           <span class="user-contact-label">Telephone:</span>
+          <input type="tel" name="phone">
+          <!-- <svg class="user-contact-icon" for="phone">
+            <use href="./images/icons.svg#icon-tel"></use>
+          </svg> -->
         </label>
-        <input type="tel" placeholder="phone" name="phone" id="phone">
 
-        <label for="email">
-          Email:
+        <label class="user-contact-field">
+           <span class="user-contact-label">Email:</span>
+          <input type="email" name="email">
+          <!-- <svg class="user-contact-icon">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg> -->
         </label>
-        <input type="email" placeholder="user@domain.com" name="email" id="email">
-        <label for="Comments">
-          Comments:
+
+        <label class="user-contact-field">
+          <span class="user-contact-label">Comments:</span>
+          <textarea name="comments" placeholder="Text input" rows="5"></textarea>
         </label>
-        <textarea name="comments" placeholder="Text input" id="comments" rows="5"></textarea>
 
-        <label for="checkbox">
+        <label class="user-contact-checkbox">
+          <input type="checkbox" name="agree">
+          I accept the terms and conditions of the <span class="privacy">Privacy Policy</span>
         </label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <p>
-          I accept the terms and conditions of the <span>Privacy Policy</span>
-        </p>
-
-
-        <button class="user-contact-button" type="submit">Send</button>
+           
+        <button class="user-contact-submit" type="submit">Send</button>
         <!-- <input type="submit" value="Send"> -->
       </form>
-
       <button class="modal-close" data-modal-close>
         <svg>
           <use href="./images/icons.svg#icon-close"></use>
