@@ -780,7 +780,7 @@ p {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-  fill: var(--navyblue);
+  fill: rgba(46, 47, 66, 1);
 
 }
 
@@ -812,7 +812,8 @@ margin-right: 8px;
 
 .privacy {
   color: var(--iris);
-  text-decoration: underline;
+
+
 }
 
 .user-contact-submit {

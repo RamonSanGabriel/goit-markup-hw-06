@@ -328,7 +328,7 @@
       <form class="user-contact">
         <label class="user-contact-field">
           <div class="user-contact-label">Name:</div>
-          <input type="text" name="first_name">
+          <input type="text" placeholder="Full name" name="first_name">
           <svg class="user-contact-icon" id="first-name">
             <use href="./images/icons.svg#icon-user"></use>
           </svg>
@@ -336,7 +336,7 @@
 
         <label class="user-contact-field">
           <div class="user-contact-label">Telephone:</div>
-          <input type="tel" name="phone">
+          <input type="tel" placeholder="e.g. +63 999-999-9999"name="phone">
           <svg class="user-contact-icon" for="phone">
             <use href="./images/icons.svg#icon-tel"></use>
           </svg>
@@ -344,7 +344,7 @@
 
         <label class="user-contact-field">
           <div class="user-contact-label">Email:</div>
-          <input type="email" name="email">
+          <input type="email" placeholder="user@domain.com" name="email">
           <svg class="user-contact-icon">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
@@ -360,7 +360,7 @@
           <input type="checkbox" name="agree">
         </label>
         <p class="user-contact-agree">
-          I accept the terms and conditions of the <span class="privacy">Privacy Policy</span>
+          I accept the terms and conditions of the <span class="privacy"><a href="#">Privacy Policy</a> </span>
         </p>
         <button class="user-contact-submit" type="submit">Send</button>
         <!-- <input type="submit" value="Send"> -->
