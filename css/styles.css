@@ -672,10 +672,11 @@ p {
   height: 40px;
   padding: 8px 16px;
   margin-top: 16px;
-  border-radius: 4px;
-  outline: 0;
-  border: 1px;
+  border: none;
   align-items: center;
+  border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .footer-subscribe-button {
